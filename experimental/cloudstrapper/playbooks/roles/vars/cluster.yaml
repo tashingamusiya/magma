@@ -4,8 +4,8 @@
 #Use them to customize each deployment
 #------------------
 #Orc8r deployment variables
-orc8rClusterName: Sydney
-orc8rDomainName: bbbath.fbmagma.ninja
+orc8rClusterName: Singular
+orc8rDomainName: magma.thesingular.co.za
 orc8rLabel: 1.5.0
 orc8rVersion: v1.5
 gitHelmRepo: helm15
@@ -14,16 +14,16 @@ gitHelmRepo: helm15
 #AWS variables
 awsBootKey: "{{ keyBoot }}"
 awsHostKey: "{{ keyHost }}"
-awsAgwRegion: us-west-2
-awsOrc8rRegion: us-west-2
+awsAgwRegion: us-east-1
+awsOrc8rRegion: us-east-1
 awsAgwAz: "{{ awsAgwRegion }}a"
 awsAgwVersion: v1.5
 awsInstanceType: "t2.medium"
 
-awsAgwAmi: ami-06447b6fef489a898
-#awsCloudstrapperAmi: ami-03865ac2b925f8056
-# awsAgwAmi: ami-00f8fdefbca05fe8e
-awsCloudstrapperAmi: ami-051d6db85d3a56804
+awsAgwAmi: ami-00a27941d9004ff30
+#awsCloudstrapperAmi: ami-0538c231790f442a6
+# awsAgwAmi: ami-00a27941d9004ff30
+awsCloudstrapperAmi: ami-0538c231790f442a6
 
 #------------------
 #Cluster-specific Presets
